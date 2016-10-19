@@ -1,0 +1,314 @@
+.partner {
+	@include breakpoint(mobile){
+
+          min-width: 320px  ;
+          width:  100%;
+
+
+
+
+    }
+    @include breakpoint(tablet){
+
+          min-width: 768px  ;
+          width:  100%;
+
+
+
+
+    }
+}
+.partner-wrapper {
+
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 70px;
+	margin-bottom: 100px;
+	 @include breakpoint(tablet){
+
+
+      	width: 768px;
+
+      	// padding-left: 155px;
+      	// padding-right: 100px;
+      	margin-bottom: 100px;
+      	margin-top: 102px;
+
+
+
+    }
+    @include breakpoint(mobile){
+
+
+     			width:  320px;
+     			margin-top: 26px;
+     			line-height: 1.1;
+     			margin-bottom: 40px;
+
+
+
+
+    }
+
+	h2 {
+		font-family: Montserrat-Bold;
+		color: #333333;
+		font-size: 22px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 35px;
+		@include breakpoint(mobile){
+
+     			padding-left: 28px;
+     			padding-right: 28px;
+     			margin-bottom: 17px;
+
+
+    }
+    @include breakpoint(tablet){
+
+     			 margin-bottom: 34px;
+
+
+    }
+	}
+	a {
+
+		font-family: Montserrat-Bold;
+		color: #ff4e50;
+		font-size: 13px;
+		font-weight: 700;
+		text-align: center;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #ff4e50;
+		background-color: #ffffff;
+		width: 193px;
+		height: 40px;
+		border-radius: 30px;
+		padding: 14px 29px;
+		display: block;
+		margin: 0 auto;
+		text-decoration: none;
+		margin-top: 40px;
+
+		@include breakpoint(mobile){
+
+     			width: 280px;
+     			margin-top: 2px;
+     			letter-spacing: 0.6px;
+
+
+    }
+@include breakpoint(tablet){
+
+     			width: 190px;
+     			// margin-top: -35px;
+     			// letter-spacing: 0.6px;
+     			// padding-left: 5px;
+     			// text-align: center;
+
+
+    }
+	}
+
+
+		}
+		.partner-person-wrapper {
+			 @include breakpoint(tablet){
+
+
+      padding-left: 150px;
+      padding-right: 100px;
+      margin: 0 auto;
+
+
+
+    }
+		}
+	.partner-person {
+		float: left;
+		width: 235px;
+		// margin-right: 20px;
+		 @include breakpoint(tablet){
+
+
+      	width: 220px;
+      	margin-right: 35px;
+      	// margin-right: 53px;
+      	margin-bottom: 55px;
+
+
+
+    }
+
+    @include breakpoint(mobile){
+
+
+     			width: 320px;
+     			margin: 0 auto;
+
+
+
+    }
+
+
+		 img {
+
+			display: block;
+			margin:0 auto;
+			border-radius: 50%;
+		 }
+		figure {
+			position: relative;
+			margin-bottom: 36px;
+			display: block;
+			 margin: 0 auto;
+			 @include breakpoint(mobile){
+
+					margin-bottom: 28px;
+
+
+
+    }
+     @include breakpoint(tablet){
+
+					margin-bottom: 0;
+
+
+
+    }
+		}
+		.tv {
+
+			background: url("../img/shape128.png") 9px 7px no-repeat ;
+			background-color: #ff4e50;
+		}
+		.cofee {
+			background: url("../img/shape153.png") 9px 7px no-repeat ;
+			background-color: #1cd7ad;
+		}
+		.gl {
+			background: url("../img/shape155.png") 9px 7px no-repeat ;
+			background-color: #ffa507;
+		}
+		.ls {
+			background: url("../img/shape170.png") 9px 7px no-repeat ;
+			background-color: #4e73db;
+		}
+		.litlimg {
+			position: absolute;
+			display: block;
+			top: 85px;
+			left: 138px;
+			// background: url("../img/shape128.png") 9px 7px no-repeat ;
+			// background-color: #FFF;
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 4px;
+			border-color: #ffffff;
+
+			width: 42px;
+			height: 42px;
+
+			z-index: 100;
+			 @include breakpoint(tablet){
+
+
+     		left: 132px;
+     		top: 85px;
+
+
+
+    }
+
+		}
+
+
+
+		figcaption {
+			font-family: Montserrat-Bold;
+			color: #333333;
+			font-size: 14px;
+			font-weight: 700;
+			text-align: center;
+			margin-bottom: 16px;
+			margin-top: 21px;
+				 @include breakpoint(mobile){
+
+					margin-top: 16px;
+
+
+
+    }
+     @include breakpoint(tablet){
+
+					margin-top: 18px;
+					margin-bottom: 15px;
+
+
+
+    }
+
+
+					}
+		p {
+			font-family: Roboto-Light;
+			color: #666666;
+			font-size: 14px;
+			font-weight: 300;
+			text-align: center;
+			padding-left: 15px;
+			padding-right: 15px;
+			 @include breakpoint(mobile){
+
+					padding-left: 50px;
+					padding-right: 50px;
+
+
+    }
+@include breakpoint(tablet){
+
+					letter-spacing: 0.3px;
+					line-height: 1.2;
+
+
+
+    }
+					}
+	}
+	.partner-person-tablet {
+		@include breakpoint(tablet){
+
+
+       margin-bottom: 39px;
+
+
+
+    }
+	.partner-person:last-child {
+		margin-right: 0;
+	}
+.partner-person :nth-child(5){
+	@include breakpoint(tablet){
+
+
+       margin-bottom: 10px;
+
+
+
+    }
+}
+.partner-person :nth-child(4){
+	@include breakpoint(tablet){
+
+
+       margin-bottom: 10px;
+
+
+
+    }
+}
+
+
+}

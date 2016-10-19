@@ -1,0 +1,239 @@
+ @import "mixins.scss";
+
+
+
+.header-wrapper {
+	  @include breakpoint(tablet){
+		 min-width: 320px	;
+     			width:  100%;
+     			height: 702px;
+
+
+    }
+@include breakpoint(mobile){
+
+     			// min-width: 320px	;
+     			width:  100%;
+     			  height: 540px;
+
+
+
+
+    }
+
+	background: url(../img/promomain.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 700px;
+
+	header {
+		width:940px;
+    		margin: 0 auto;
+		padding-top: 37px;
+		@include breakpoint(mobile){
+
+     			padding-top: 22px;
+     			position: relative;
+     			height: 540px;
+     			background-size: cover;
+
+
+
+    }
+     @include breakpoint(tablet){
+			width: 768px	;
+
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 40px;
+
+    }
+
+
+
+	.header-name {
+			font-family: 'Montserrat-Bold';
+			color: $colorLogoHeader;
+			font-size: 20px;
+			font-weight: 700;
+			text-align: left;
+			display: inline-block;
+			text-decoration: none;
+			padding-top: 10px;
+			letter-spacing: 1.2px;
+			@include breakpoint(mobile){
+
+
+     			position: absolute;
+     			top: 172px;
+     			text-align: center;
+     			 left: 50%;
+     			 letter-spacing: 1.02px;
+
+     			   transform: translate(-50%, 0);
+
+
+
+
+    }
+     @include breakpoint(tablet){
+
+        padding-top: 10px;
+		letter-spacing: 1.1px;
+    }
+
+
+		}
+		h1 {
+			font-family: Montserrat-Bold;
+			color: #ffffff;
+			font-size: 52px;
+			font-weight: 700;
+			text-align: center;
+			width: 500px;
+			margin: 0 auto;
+			margin-top: 148px;
+			line-height: 1.1;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			@include breakpoint(mobile){
+
+
+     			font-family: Montserrat-Bold;
+				color: #ffffff;
+				font-size: 30px;
+				font-weight: 700;
+				text-align: center;
+				transform: scaleX(1.0014);
+				width: 300px;
+				margin-top: 170px;
+				margin-left: auto;
+				margin-right: auto;
+				line-height: 1.19;
+				letter-spacing: -0.18px;
+				margin-bottom: 10px;
+
+
+
+
+
+    }
+     @include breakpoint(tablet){
+			letter-spacing: 0.10px;
+			margin-top: 145px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+
+    }
+
+
+
+
+					}
+			p {
+				font-family: Roboto-Light;
+				color: #ffffff;
+				font-size: 24px;
+				font-weight: 300;
+				text-align: center;
+				margin-bottom: 38px;
+				@include breakpoint(mobile){
+
+
+
+				font-size: 18px;
+				font-weight: 300;
+				text-align: center;
+				transform: scaleX(1.0014);
+				width:220px;
+				margin: 0 auto;
+				margin-bottom: 31px;
+				letter-spacing: 0.01px;
+			// word-spacing: 1.2px;
+			margin-bottom: 20px;
+
+    }
+     @include breakpoint(tablet){
+
+     		margin-bottom: 36px;
+
+    }
+
+
+			}
+			button {
+				font-family: Montserrat-Bold;
+				color: #ffffff;
+				font-size: 13px;
+				font-weight: 700;
+				text-align: center;
+				background-color: #ff4e50;
+				width: 225px;
+				height: 40px;
+				border: none;
+				border-radius:16px;
+				margin: 0 auto;
+				display: block;
+				padding: 12px 21px;
+				letter-spacing: 0.5px;
+				@include breakpoint(mobile){
+
+     			width: 276px;
+     			display: block;
+     			margin-left: auto;
+     			margin-right: auto;
+
+    }
+    @include breakpoint(tablet){
+
+			padding-left: 14px;
+
+    }
+			}
+		form {
+			float: right;
+			text-align: left;
+			@include breakpoint(mobile){
+				display: block;
+     			width: 190px;
+     			margin: 0 auto;
+     			float: none;
+
+
+
+    }
+
+			.header-autoriz_log {
+				text-align: right;
+				display: inline-block;
+				font-family: Montserrat-Bold;
+				color: #ffffff;
+				font-size: 14px;
+				font-weight: 700;
+				padding: 10px  18px;
+				// margin-right: 5px;
+				text-decoration: none;
+
+			}
+
+
+			.header-autoriz_enter {
+				font-family: Montserrat-Bold;
+				color: #ffffff;
+				font-size: 14px;
+				font-weight: 700;
+				text-align: center;
+				padding: 8px  16px;
+				border: 2px solid #fff;
+				border-radius: 18px;
+				text-decoration: none;
+				line-height: 33px;
+
+			}
+
+
+		}
+
+	}
+}

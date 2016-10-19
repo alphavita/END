@@ -1,0 +1,23 @@
+@import "variables.scss";
+@import "mixins.scss";
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url("../fonts/montserrat-bold-webfont.woff");
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url("../fonts/roboto-light-webfont.woff");
+}
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url("../fonts/montserrat-regular-webfont.woff");
+}
+
+
+//= partials/reset.scss
+//= partials/swiper.scss
+//= partials/header.scss
+//= partials/galery.scss
+//= partials/partner.scss
+//= partials/ideas.scss
+//= partials/footer.scss
