@@ -51,7 +51,7 @@
     }
 
 	h2 {
-		font-family: Montserrat-Bold;
+		font-family: $fontPartnersHeader;
 		color: #333333;
 		font-size: 22px;
 		font-weight: 700;
@@ -74,7 +74,7 @@
 	}
 	a {
 
-		font-family: Montserrat-Bold;
+		font-family: $fontPartnersOther;
 		color: #ff4e50;
 		font-size: 13px;
 		font-weight: 700;
@@ -221,13 +221,22 @@
 
 
     }
+     @include breakpoint(mobile){
+
+
+     		left: 182px;
+     		top: 85px;
+
+
+
+    }
 
 		}
 
 
 
 		figcaption {
-			font-family: Montserrat-Bold;
+			font-family: $fontPartnersName;
 			color: #333333;
 			font-size: 14px;
 			font-weight: 700;
@@ -253,7 +262,7 @@
 
 					}
 		p {
-			font-family: Roboto-Light;
+			font-family:$fontPartnersDescription;
 			color: #666666;
 			font-size: 14px;
 			font-weight: 300;

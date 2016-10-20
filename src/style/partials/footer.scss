@@ -50,12 +50,14 @@ footer {
 
 	a {
 		text-decoration: none;
+		color: $colorFooterItem;
+
 		// letter-spacing: 2.0px;
 
 
 	}
 	h2 {
-		font-family: 'Montserrat-Bold';
+		font-family: $fontFooterCompany;
 		color:  #ff4e50;
 		font-size: 16px;
 		font-weight: 700;
@@ -89,7 +91,7 @@ footer {
     }
 	}
 	h3 {
-		font-family: Montserrat-Bold;
+		font-family: $fontFooterPartners;
 		color: #333333;
 		font-size: 14px;
 		font-weight: 700;
@@ -118,8 +120,8 @@ footer {
 		list-style: none;
 		padding: 0;
 		li {
-			font-family: 'Roboto-Light';
-			color: #666666;
+			font-family: $fontFooterItem;
+			color: $colorFooterItem;
 			font-size: 14px;
 			font-weight: 300;
 			line-height: 24px;
@@ -215,7 +217,7 @@ footer {
     }
 }
 	figcaption {
-		font-family: Montserrat-Bold;
+		font-family: $fontFooterPartners;
 		color: #cccccc;
 		font-size: 10px;
 		font-weight: 700;

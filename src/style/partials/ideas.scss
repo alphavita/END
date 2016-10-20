@@ -20,7 +20,7 @@
     }
 
  h2 {
-    font-family: Montserrat-Bold;
+    font-family: $fontIdeasHeader;
     color: #333333;
     font-size: 22px;
     font-weight: 700;
@@ -38,7 +38,7 @@
 
   max-width:980px;
   margin:0 auto;
-  margin-bottom: 79px;
+  margin-bottom: 68px;
   @include breakpoint(tablet){
       width: 788px;
 
@@ -159,18 +159,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Montserrat Bold", sans-serif;
+  font-family: $fontIdeasHeader;
   font-size: 22px;
   color: white;
 text-align: center;
 z-index: 10;
+
 }
 
 }
 .search-form {
 
    width: 412px;
-    margin: 40px auto 60px;
+    margin: 50px auto 60px;
     margin-bottom: 100px;
     @include breakpoint(tablet){
 
@@ -211,7 +212,7 @@ z-index: 10;
         }
 }
   .search-form-heading-small{
-   font-family: 'Roboto-Light';
+   font-family: $fontSearcherSubHeader;
     color: #333333;
     font-size: 18px;
     font-weight: 300;
@@ -239,7 +240,7 @@ z-index: 10;
     box-shadow: 0px 1px 0px 0px #eeeeee;
     width: 240px;
     height: 40px;
-    font-family: 'Roboto-Light';
+    font-family: $fontSearcherSubHeader;
     color: #999999;
     font-size: 14px;
     font-weight: 300;
@@ -273,7 +274,7 @@ width: 238px;
     width: 160px;
     height: 40px;
     border: none;
-    font-family: Montserrat-Bold;
+    font-family: $fontSearcherSearch;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;

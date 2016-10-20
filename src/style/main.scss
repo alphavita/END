@@ -2,15 +2,21 @@
 @import "mixins.scss";
 @font-face {
 	font-family: 'Montserrat-Bold';
-	src: url("../fonts/montserrat-bold-webfont.woff");
+	src: url("../fonts/montserrat-bold-webfont.woff"),
+		 url("fonts/montserrat-bold-webfont.eot"),
+		url("fonts/montserrat-bold-webfont.woff2")
+		 ;
+
 }
 @font-face {
 	font-family: 'Roboto-Light';
-	src: url("../fonts/roboto-light-webfont.woff");
+	src: url("../fonts/roboto-light-webfont.woff"),
+		 url("../fonts/roboto-light-webfont.eot");
 }
 @font-face {
 	font-family: 'Montserrat-Regular';
-	src: url("../fonts/montserrat-regular-webfont.woff");
+	src: url("../fonts/montserrat-regular-webfont.woff"),
+		 url("../fonts/montserrat-regular-webfont.eot");
 }
 
 
