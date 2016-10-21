@@ -13,6 +13,8 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var plumber = require('gulp-plumber');
 var prefixer = require('gulp-autoprefixer');
+var buffer = require('vinyl-buffer');
+var csso = require('gulp-csso');
 
 //пути
 var patch = {
@@ -31,7 +33,7 @@ var patch = {
      html: 'src/*.html',
         js: 'src/js/main.js',
         style: 'src/style/main.scss',
-        img: 'src/style/img/**/*.*',
+        img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         sprites: 'src/style/sprite/*.*'
   },
@@ -93,18 +95,29 @@ gulp.task('style:build', function() {
 
 
 
-gulp.task('sprite:build', function() {
-    var spriteData =
-        gulp.src(path.src.sprites)
-    .pipe(spritesmith({
-        imgName: 'sprite.png',
-        cssName: 'sprite.scss',
-        imgPath: '../img/sprite/sprite.png',
-    }));
+gulp.task('sprite', function () {
+  // Generate our spritesheet
+  var spriteData = gulp.src(patch.src.sprites).pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.css',
+     padding: 40
+  }));
 
-    spriteData.img.pipe(gulp.dest(path.build.spritesImg)); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest(path.build.spritesSCSS)); // путь, куда сохраняем стили
+
+    spriteData.img.pipe(gulp.dest(patch.build.spritesImg));
+    spriteData.css.pipe(gulp.dest(patch.build.spritesSCSS));
+
+
+
+
 });
+
+gulp.task('image:build', function(){
+  gulp.src(patch.src.img)
+  .pipe(imagemin())
+  .pipe(gulp.dest(patch.build.img))
+
+  });
 
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
