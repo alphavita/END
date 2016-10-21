@@ -67,6 +67,9 @@
 			text-decoration: none;
 			padding-top: 10px;
 			letter-spacing: 1.2px;
+			&:hover {
+				color: #ba55d3;
+			}
 			@include breakpoint(mobile){
 
 
@@ -182,12 +185,20 @@
 				display: block;
 				padding: 12px 21px;
 				letter-spacing: 0.5px;
+				&:hover {
+				color: #ba55d3;
+				border: 2px solid #ba55d3;
+				background-color: #dcdcdc;
+				transition-duration: 2s;
+			}
+
 				@include breakpoint(mobile){
 
      			width: 276px;
      			display: block;
      			margin-left: auto;
      			margin-right: auto;
+
 
     }
     @include breakpoint(tablet){
@@ -219,8 +230,11 @@
 				padding: 10px  18px;
 				// margin-right: 5px;
 				text-decoration: none;
-
+				&:hover {
+				color: #ba55d3;
 			}
+			}
+
 
 
 
@@ -235,11 +249,29 @@
 				border-radius: 18px;
 				text-decoration: none;
 				line-height: 33px;
-
+				&:hover {
+				color: #ba55d3;
+				border: 2px solid #ba55d3;
+			}
 			}
 
 
 		}
 
 	}
+}
+@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi)  {
+   .header-wrapper  {
+
+      background: url(../img/promox2.jpg);
+background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 700px;
+
+   }
 }

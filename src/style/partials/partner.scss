@@ -91,6 +91,12 @@
 		margin: 0 auto;
 		text-decoration: none;
 		margin-top: 40px;
+		&:hover {
+				color: #ba55d3;
+				border: 2px solid #ba55d3;
+				background-color: #dcdcdc;
+				transition-duration: 2s;
+			}
 
 		@include breakpoint(mobile){
 
@@ -181,20 +187,33 @@
 		}
 		.tv {
 
-			background: url("../img/shape128.png") 9px 7px no-repeat ;
+			background: url("../img/sprite/sprite.png");
+			background-position: -142px -49px;
+			width: 16px;
+			height: 16px;
+
 			background-color: #ff4e50;
 		}
 		.cofee {
-			background: url("../img/shape153.png") 9px 7px no-repeat ;
+			background: url("../img/sprite/sprite.png");
 			background-color: #1cd7ad;
+			background-position: -49px -59px;
+		  	width: 16px;
+		  	height: 17px;
 		}
 		.gl {
-			background: url("../img/shape155.png") 9px 7px no-repeat ;
+			background: url("../img/sprite/sprite.png") no-repeat;
 			background-color: #ffa507;
+			background-position: -196px 7px;
+ 			width: 13px;
+ 			height: 16px;
 		}
 		.ls {
-			background: url("../img/shape170.png") 9px 7px no-repeat ;
+			background: url("../img/sprite/sprite.png") no-repeat;
 			background-color: #4e73db;
+			background-position: -143px 7px;
+			width: 17px;
+			height: 16px;
 		}
 		.litlimg {
 			position: absolute;

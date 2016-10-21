@@ -64,6 +64,10 @@ footer {
 		text-align: left;
 		text-transform: uppercase;
 		letter-spacing: 1.03px;
+		&:hover {
+				color: #ba55d3;
+
+			}
 		 @include breakpoint(mobile){
 
      			text-align: center;
@@ -126,6 +130,12 @@ footer {
 			font-weight: 300;
 			line-height: 24px;
 			text-align: left;
+			a:hover {
+				color: #ba55d3;
+				font-weight: bold;
+
+			}
+
 			@include breakpoint(mobile){
 
      			display: inline-block;
@@ -248,5 +258,30 @@ footer {
 
     }
 
+	}
+	.footer-logo {
+		background: url("../img/sprite/sprite.png") no-repeat;
+  background-position: 0px 0px;
+  width: 110px;
+  height: 24px;
+  text-align: right;
+ float: right;
+ margin-top: 10px;
+ &:hover {
+				transform: scale(1.2);
+				transition-duration: 2s;
+
+			}
+ @include breakpoint(mobile){
+	float: none;
+     			display: block;
+     			margin: 0 auto;
+     			text-align: center;
+
+
+
+
+
+    }
 	}
 }
